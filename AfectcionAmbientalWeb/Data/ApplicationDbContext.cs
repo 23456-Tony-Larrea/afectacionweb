@@ -15,5 +15,6 @@ namespace AfectcionAmbientalWeb.Data
         }
         public DbSet<Celular> Celulars { get; set; } 
         public DbSet<Persona> Personas { get; set; }
+       
     }
 }

@@ -188,4 +188,7 @@ D:\PV3ERO\Enclase\Program\clase-01-07-220\AfectcionAmbientalWeb\AfectcionAmbient
 D:\PV3ERO\Enclase\Program\clase-01-07-220\AfectcionAmbientalWeb\AfectcionAmbientalWeb\obj\Debug\netcoreapp3.1\Razor\Views\Personas\Details.cshtml.g.cs
 D:\PV3ERO\Enclase\Program\clase-01-07-220\AfectcionAmbientalWeb\AfectcionAmbientalWeb\obj\Debug\netcoreapp3.1\Razor\Views\Personas\Edit.cshtml.g.cs
 D:\PV3ERO\Enclase\Program\clase-01-07-220\AfectcionAmbientalWeb\AfectcionAmbientalWeb\obj\Debug\netcoreapp3.1\Razor\Views\Personas\Index.cshtml.g.cs
+D:\PV3ERO\Enclase\Program\clase-01-07-220\AfectcionAmbientalWeb\AfectcionAmbientalWeb\obj\Debug\netcoreapp3.1\Razor\Views\Role\Index.cshtml.g.cs
+D:\PV3ERO\Enclase\Program\clase-01-07-220\AfectcionAmbientalWeb\AfectcionAmbientalWeb\obj\Debug\netcoreapp3.1\Razor\Views\Role\Create.cshtml.g.cs
+D:\PV3ERO\Enclase\Program\clase-01-07-220\AfectcionAmbientalWeb\AfectcionAmbientalWeb\obj\Debug\netcoreapp3.1\Razor\Views\Role\Update.cshtml.g.cs
 D:\PV3ERO\Enclase\Program\clase-01-07-220\AfectcionAmbientalWeb\AfectcionAmbientalWeb\obj\Debug\netcoreapp3.1\AfectcionAmbientalWeb.csprojAssemblyReference.cache

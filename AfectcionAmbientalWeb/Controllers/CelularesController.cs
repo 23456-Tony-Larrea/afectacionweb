@@ -12,8 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace AfectcionAmbientalWeb.Controllers
 {
-    [Authorize]
-   
+    [Authorize(Roles = "administrador")]
     public class CelularesController : Controller
     {
         private readonly ApplicationDbContext _context;

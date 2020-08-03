@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AfectcionAmbientalWeb.Interfaces;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AfectcionAmbientalWeb.Models
 {
-    public class Persona
+    public class Persona:IPersona
     {
         public int Id { get; set; }
         [Required]

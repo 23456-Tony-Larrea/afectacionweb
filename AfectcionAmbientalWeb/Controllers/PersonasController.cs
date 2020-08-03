@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AfectcionAmbientalWeb.Data;
 using AfectcionAmbientalWeb.Models;
@@ -14,7 +12,7 @@ using System.IO;
 
 namespace AfectcionAmbientalWeb.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "administrador")] 
     public class PersonasController : Controller
     {
         private readonly ApplicationDbContext _context;

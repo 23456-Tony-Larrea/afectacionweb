@@ -37,7 +37,7 @@ namespace AfectcionAmbientalWeb.Controllers
             }
 
             var celular = await _context.Celulars
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.CelularId == id);
             if (celular == null)
             {
                 return NotFound();
@@ -91,7 +91,7 @@ namespace AfectcionAmbientalWeb.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Marca,Modelo")] Celular celular)
         {
-            if (id != celular.Id)
+            if (id != celular.CelularId)
             {
                 return NotFound();
             }
@@ -105,7 +105,7 @@ namespace AfectcionAmbientalWeb.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CelularExists(celular.Id))
+                    if (!CelularExists(celular.CelularId))
                     {
                         return NotFound();
                     }
@@ -128,7 +128,7 @@ namespace AfectcionAmbientalWeb.Controllers
             }
 
             var celular = await _context.Celulars
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.CelularId == id);
             if (celular == null)
             {
                 return NotFound();
@@ -150,7 +150,7 @@ namespace AfectcionAmbientalWeb.Controllers
 
         private bool CelularExists(int id)
         {
-            return _context.Celulars.Any(e => e.Id == id);
+            return _context.Celulars.Any(e => e.CelularId == id);
         }
     }
 }

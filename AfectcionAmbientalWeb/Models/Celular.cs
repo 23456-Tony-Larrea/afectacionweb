@@ -1,11 +1,14 @@
 ﻿using AfectcionAmbientalWeb.Interfaces;
+using System.Collections.Generic;
 
 namespace AfectcionAmbientalWeb.Models
 {
     public class Celular : ICelular
     {
-        public int Id { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
-        public string Marca { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
-        public string Modelo { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
+        public int CelularId { get ; set ; }
+        public string Marca { get; set; }
+        public string Modelo { get ; set; }
+       public List<PersonaCelular> PersonaCelular { get ; set ; }
     }
 }

@@ -39,7 +39,7 @@ namespace AfectcionAmbientalWeb.Controllers
             }
 
             var persona = await _context.Personas
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.PersonaId == id);
             if (persona == null)
             {
                 return NotFound();
@@ -111,7 +111,7 @@ namespace AfectcionAmbientalWeb.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Apellido")] Persona persona)
         {
-            if (id != persona.Id)
+            if (id != persona.PersonaId)
             {
                 return NotFound();
             }
@@ -125,7 +125,7 @@ namespace AfectcionAmbientalWeb.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PersonaExists(persona.Id))
+                    if (!PersonaExists(persona.PersonaId))
                     {
                         return NotFound();
                     }
@@ -148,7 +148,7 @@ namespace AfectcionAmbientalWeb.Controllers
             }
 
             var persona = await _context.Personas
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.PersonaId == id);
             if (persona == null)
             {
                 return NotFound();
@@ -170,7 +170,7 @@ namespace AfectcionAmbientalWeb.Controllers
 
         private bool PersonaExists(int id)
         {
-            return _context.Personas.Any(e => e.Id == id);
+            return _context.Personas.Any(e => e.PersonaId == id);
         }
     }
 }

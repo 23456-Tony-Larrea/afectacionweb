@@ -1,6 +1,7 @@
 ﻿using AfectcionAmbientalWeb.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,7 +9,8 @@ namespace AfectcionAmbientalWeb.Interfaces
 {
     public interface IPersona
     {
-         int Id { get; set; }
+        [Key]
+         int PersonaId { get; set; }
         
          string Nombre { get; set; }
         
@@ -17,5 +19,7 @@ namespace AfectcionAmbientalWeb.Interfaces
          byte[] FotografiaPerfil { get; set; }
         
          string FotografiaBase64 { get; set; }
+        public List<PersonaCelular> PersonaCelular { get; set; }
     }
+
 }
